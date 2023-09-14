@@ -1,6 +1,6 @@
 # LaTeX Dev Container
 
-Develop LaTeX and Python in a VS Code [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers).
+Write LaTeX and Python in a VS Code [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers).
 
 ## Motivation
 
