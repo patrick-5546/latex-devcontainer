@@ -1,0 +1,19 @@
+{
+    "image": "texlive/texlive:latest",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "bierner.github-markdown-preview",
+                "davidanson.vscode-markdownlint",
+                "james-yu.latex-workshop",
+                "ms-python.python",
+                "ms-python.black-formatter",
+                "ms-python.flake8",
+                "ms-python.isort",
+                "streetsidesoftware.code-spell-checker",
+                "yzhang.markdown-all-in-one"
+            ]
+        }
+    },
+    "postCreateCommand": "bash install-dependencies.sh"
+}

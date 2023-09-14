@@ -1,0 +1,14 @@
+# LaTeX generated files and directories
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+_minted*/
+
+# Python generated files
+*.pyc
+
+# Python virtual environment
+.venv

@@ -1,0 +1,62 @@
+\documentclass{article}
+
+\usepackage{fullpage}
+\usepackage{color}
+\usepackage{amsmath,amssymb}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage[export]{adjustbox}
+
+\usepackage{minted} \BeforeBeginEnvironment{minted}{\begingroup\color{black}} \AfterEndEnvironment{minted}{\endgroup} \setminted{autogobble,breaklines,breakanywhere,linenos}
+
+% Colours
+\definecolor{blu}{rgb}{0,0,1}
+\newcommand{\blu}[1]{{\textcolor{blu}{#1}}}
+\definecolor{gre}{rgb}{0,.5,0}
+\newcommand{\gre}[1]{\textcolor{gre}{#1}}
+\definecolor{red}{rgb}{1,0,0}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\definecolor{pointscolour}{rgb}{0.6,0.3,0}
+
+% answer commands
+\newcommand\ans[1]{\par\gre{Answer: #1}}
+\newenvironment{answer}{\par\begingroup\color{gre}Answer: }{\endgroup}
+\let\ask\blu
+\let\update\red
+\newenvironment{asking}{\begingroup\color{blu}}{\endgroup}
+\newcommand\pts[1]{\textcolor{pointscolour}{[#1~points]}}
+
+% Math
+\def\R{\mathbb{R}}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\newcommand{\norm}[1]{\lVert #1 \rVert}
+\newcommand{\mat}[1]{\begin{bmatrix}#1\end{bmatrix}}
+
+% LaTeX
+\newcommand{\centerfig}[2]{\begin{center}\includegraphics[width=#1\textwidth]{#2}\end{center}}
+
+
+\begin{document}
+
+\title{Latex Dev Container \\ \small{Develop LaTeX and Python in VS Code}}
+\date{}
+\maketitle
+
+\vspace*{-20mm}
+
+\begin{figure}[htp]
+      \centering
+      \includegraphics[valign=c,width=.3\textwidth]{./img/latex.jpg}\hfill
+      \includegraphics[valign=c,width=.2\textwidth]{./img/vscode.jpg}\hfill
+      \includegraphics[valign=c,width=.3\textwidth]{./img/python.png}
+\end{figure}
+
+Example of inserting Python code into LaTeX document:
+\inputminted[firstline=1, lastline=17]{python}{./src/main.py}
+
+\end{document}
